@@ -1,0 +1,121 @@
+body {
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/smoke.png);
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  color: #ad81ef;
+  font-style:oblique;
+}
+
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+}
+
+li::before {
+  content: "• ";
+  color: #ad81ef;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+
+.col-40 {
+  background: #9be2e8;
+  padding: 30px;
+}
+
+.col-60 {
+  background:	#be1ff6;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/*Lo nuevo*/
+
+.col-40{
+  width:40%;
+}
+
+.col-60{
+  width:60%;
+}
+
+#juego {
+  height:600px;
+  width:600px;
+}
+
+#titulo {
+  text-align: center;
+  background-color: #a4b1eb;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #be1ff6;
+}
+
+.subs {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: #be1ff6;
+    
+}
+
+#mezclar {
+  background: #be1ff6;
+  color: #9be2e8;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 80px;
+}
+
+.cuadro {
+  width: 20px;
+  height: 20px;
+  animation: fadein 5s;
+  background-color: #be1ff6;
+  text-align: center;
+}
+.opcion {
+  -moz-appearance: none;
+  border: 1px solid #a4b1eb;
+  height: 15px;
+  width: 14px;
+}
+
+.opcion:checked {
+  background: #be1ff6;
+}
+
+#contadorDeMovimientos {
+  font-size: 30px;
+  color: #be1ff6;
+  padding: 25px;
+}
+
+#footer {
+  font-family: 'Kavivanar', cursive;
+  font-size: 20px;
+  color: #be1ff6;
+}
+
+img {
+  float: right;
+  margin-top: 5px; 
+}

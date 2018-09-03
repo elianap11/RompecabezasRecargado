@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rompecabezas Recargado</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/sweetalert/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar|Playfair+Display" rel="stylesheet">
+  </head>
+  
+  <body>
+    
+    <div class ="col-40">
+      <h1 id ="titulo">Rompecabezas Recargado</h1>    
+      <h2 id = "instrucciones" class="subs">Instrucciones</h2>
+      <ul id="lista-instrucciones">
+      </ul>
+
+      <h2 class="subs">Seleccioná el nivel</h2>
+        
+        <ul>
+          <li>
+            <span>Cantidad de piezas:</span>
+            <span id="cantidadPiezasPorLado">4</span>
+          </li>
+          
+          <li>
+            <input type="radio" name="nivel" id="facil" checked class="opcion">Fácil
+            <input type="radio" name="nivel" id="intermedio" class="opcion">Intermedio
+            <input type="radio" name="nivel" id="dificil" class="opcion">Difícil
+          </li>
+        </ul>
+        
+        <br>
+        
+        <button id="mezclar">Mezclar</button>
+        <br>
+        <br>
+        <img src="images/mdn.png" width="130px" height="130px">
+        <h3 class="subs">  Te quedan:</h3><span id="contadorDeMovimientos">50</span>
+        <h3 class="subs">movimientos.</h3>
+              
+    </div>
+
+    <div class="col-60">
+      <canvas id="micanvas" width="600" height="600"></canvas>
+    </div>
+
+    <footer>
+      <h4 id = "footer">@Eliana</h4>
+    </footer>
+
+    <script src="js/juego.js"></script>
+
+  </body>
+</html>
